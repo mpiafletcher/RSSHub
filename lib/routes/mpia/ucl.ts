@@ -7,13 +7,13 @@ export const route: Route = {
     example: '/mpia/ucl',
     radar: [
         {
-            source: ['www.uefa.com/uefachampionsleague/news/'],
+            source: ['https://www.tntsports.co.uk/football/champions-league/'],
         },
     ],
     name: 'Champions League News',
     maintainers: ['mpiafletcher'],
     handler: async () => {
-        const url = 'https://www.uefa.com/uefachampionsleague/news/';
+        const url = 'https://www.tntsports.co.uk/football/champions-league/';
         const response = await ofetch(url);
         const html = response as string;
 
